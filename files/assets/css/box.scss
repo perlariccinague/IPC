@@ -1,0 +1,36 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px auto;
+  .ce_rsce_my_box {
+    width: 48%;
+    background: #97d8f4;
+    margin: 10px auto;
+    .box-block {
+      img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: top;
+      }
+      .description {
+        display: inline-block;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        padding: 15px;
+        p {
+          padding-right: 15px ;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px)  {
+  .box {
+    .ce_rsce_my_box {
+      width: 100%;
+    }
+  }
+}

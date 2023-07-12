@@ -1,0 +1,9 @@
+<section class="<?php echo $this->class ?> block"<?php echo $this->cssID ?>>
+    <div class="box-block">
+       <img src="{{file::<?= $this->image ?>}}">
+       <div class="description">
+           <p><?= $this->text  ?></p>
+           <p><?= $this->name  ?></p>
+       </div>
+    </div>
+</section>
