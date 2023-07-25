@@ -22,15 +22,16 @@
 }
 
 #main .ce_sliderStart.slider {
-/*  max-width: 860px;*/
   position: relative;
   width: 100%;
   .content-slider {
-    width: 70%;
     margin: 0 auto;
-    .image_container {
-      img {
-        width: 100%;
+    .ce_image {
+      max-width: initial;
+      .image_container {
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -41,14 +42,18 @@
     .slider-prev, .slider-next {
       img {
         filter: invert(1);
-        width: 40px;
+        width: 50px;
+        transition: filter 250ms;
+        &:hover {
+          filter: brightness(0) invert(60%) sepia(6%) saturate(2360%) hue-rotate(166deg);
+        }
       }
     }
     .slider-prev {
-      left: 15px;
+      left: 20px;
     }
     .slider-next {
-      right: 15px;
+      right: 20px;
     }
     .slider-menu {
       display: none;
